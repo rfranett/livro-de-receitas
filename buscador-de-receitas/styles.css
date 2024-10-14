@@ -1,0 +1,97 @@
+body {
+    /* Define a fonte usada no corpo do documento, a altura da linha e remove as margens padrão */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    /* Adiciona espaçamento interno e define a cor de fundo e do texto */
+    padding: 20px;
+    background-color: rgb(150, 143, 138); /* Cor de fundo geral */
+    color: #333; /* Cor do texto */
+}
+
+.container {
+    /* Define a largura máxima do conteúdo e centraliza-o na página */
+    max-width: 800px;
+    margin: auto; /* Centraliza o container */
+    /* Cor de fundo e espaçamento interno do container */
+    background-color: rgb(181, 182, 131);
+    padding: 20px;
+    /* Adiciona bordas arredondadas e sombra ao container */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(65, 51, 35); /* Sombra ao redor do container */
+}
+
+h1 {
+    /* Centraliza o título da página */
+    text-align: center;
+}
+
+.search-form {
+    /* Define o layout dos itens do formulário de busca como flexível, permitindo o espaçamento dinâmico */
+    display: flex;
+    gap: 10px; /* Espaço entre os elementos do formulário */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+}
+
+.search-input {
+    /* Permite que o campo de busca cresça para ocupar o máximo de espaço possível */
+    flex-grow: 1;
+    padding: 10px; /* Espaçamento interno no campo de texto */
+    border-radius: 6px; /* Bordas arredondadas no campo de texto */
+    border: 1px solid #ddd; /* Cor da borda */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+.search-button {
+    /* Define o estilo do botão de busca */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda do botão */
+    border-radius: 6px; /* Bordas arredondadas */
+    background-color: #4CAF50; /* Cor de fundo verde do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer; /* Troca o cursor para "pointer" ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte no botão */
+}
+
+.search-button:hover {
+    /* Muda a cor de fundo quando o botão é "hovered" (passado o mouse por cima) */
+    background-color: #355a36; /* Cor de fundo ao passar o mouse */
+    transition: 0.4s; /* Suaviza a transição da cor do botão ao passar o mouse */
+}
+
+.recipe-list {
+    /* Define o layout da lista de receitas como grade */
+    display: grid;
+    gap: 20px; /* Espaçamento entre os itens da grade */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta automaticamente o número de colunas com base no tamanho da tela */
+}
+
+.recipe-card {
+    /* Define o estilo de cada cartão de receita */
+    border-radius: 5px #b3b0b0; /* Bordas arredondadas */
+    border: 1px solid; /* Define a borda ao redor do cartão */
+    padding: 10px; /* Espaçamento interno do cartão */
+    text-align: center; /* Centraliza o conteúdo no cartão */
+    cursor: pointer; /* Apresenta o cursor como pointer ao passar sobre o cartão */
+}
+
+.recipe-card img {
+    /* Define o estilo das imagens dentro dos cartões */
+    width: 100%; /* Imagem ocupa 100% da largura do cartão */
+    height: 77%; /* Altura da imagem em relação à altura total do cartão */
+    object-fit: cover; /* A imagem cobre todo o espaço, sem distorção */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+.recipe-details {
+    /* Define o estilo da seção que mostra os detalhes da receita selecionada */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.recipe-details img {
+    /* Define o estilo da imagem nos detalhes da receita */
+    width: 100%; /* Largura total da imagem */
+    max-width: 400px; /* Largura máxima de 400px */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}

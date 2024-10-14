@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Declara o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8, que suporta a maioria dos caracteres de várias línguas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define que a largura da página deve ser ajustada ao tamanho da tela do dispositivo e a escala inicial é 1 -->
+    
+    <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <title>Receitas</title>
+</head>
+<body>
+    <!-- Elemento principal da página onde será organizado todo o conteúdo -->
+    <main class="container">
+        <!-- Cabeçalho principal da página -->
+        <h1>Buscador de Receitas</h1>
+        
+        <!-- Formulário de busca de receitas -->
+        <form class="search-form">
+            <!-- Rótulo do campo de texto, associando-se ao campo de busca pelo atributo "for" -->
+            <label for="recipe-search">Buscar receita:</label>
+            <!-- Campo de entrada para o usuário digitar o ingrediente que deseja buscar -->
+            <input type="text" id="recipe-search" placeholder="Digite o ingrediente" class="search-input">
+            <!-- Botão para submeter o formulário e iniciar a busca -->
+            <button type="submit" class="search-button">Buscar</button>
+        </form>
+
+        <!-- Div para mostrar a mensagem de carregamento quando as receitas estão sendo buscadas -->
+        <div class="loading"></div>
+
+        <!-- Div onde serão listadas as receitas retornadas pela API -->
+        <div class="recipe-list"></div>
+
+        <!-- Div onde serão exibidos os detalhes de uma receita selecionada -->
+        <div class="recipe-details"></div>
+    </main>
+
+    <!-- Link para o arquivo JavaScript externo que contém as funcionalidades da página -->
+    <script src="./scripts.js"></script>
+</body>
+</html>
